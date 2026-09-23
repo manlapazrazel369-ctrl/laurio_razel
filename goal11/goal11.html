@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .parent{
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+        overflow: auto;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        
+    }
+    .Cat{
+        overflow: auto;
+        background-color: rgb(20, 229, 128);
+        width: 40%;
+        height: 180px;
+    }
+    .Dog{
+        overflow: auto;
+        background-color: rgb(255, 56, 42);
+        width: 40%;
+        height: 200px;
+    }
+    img{
+        float: left;
+        flex-shrink: 0;
+        height: 90px;
+        width: 80px;
+        padding-top: 0;
+    }
+    p{
+        flex: 1;
+    }
+    h4{
+        padding: 0;
+    }
+    .Dog img{
+        width: 120px;
+        height: 75px;
+    }
+    footer{
+        color: black;
+        text-align: center;
+        background-color: blueviolet;
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="Cat">
+            <h4>CatCSS</h4>
+            <img src="cat.jpeg" alt="cat">
+            <p>A cat is a small, gracefull animal with soft fur, bright eyes,
+                and a quit, indipendent spirit, it moves with smooth, careful step,
+                loves to curl up in warm, cozy spots, and can be both playfull and calm,
+                watching everything with curiosity, and showing affection in its own gentle,
+                subtle way. 
+            </p>
+        </div>
+        <div class="Dog">
+            <h4>DogCSS</h4>
+            <img src="dog.jpeg" alt="dog">
+            <p>A dog is loyal, energetic, and affectionate animal known for its wagging tail,
+                expressive eyes, and boundless loyal for its owner, it is a playful and protective,
+                always excited to see you, loves to run, bark, and has strong sense of companionship
+                that make it not just pet, but a true best friend who stays by your side through everything.
+            </p>
+        </div>
+    </div>
+<footer>Copyright.This is a footer</footer>
+</body>
+</html>
